@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WeBuild</title>
+</head>
+<header>    
+</header>
+<section>
+    
+</section>
+<nav>
+    <h1 class="leftt">WeBuild</h1>
+   
+    
+</nav> 
+<aside>
+    <nav>
+        <h1 class="rightt">Contact Us</h1>
+        <p>
+            
+        </p>
+        
+    </nav>
+</aside>
+ 
+<body>
+    <h1 id="mainHead">WeBuild</h1>
+    <h3 id="state">We're working hard to imporve our website and we'll be ready to launch after</h3>
+    <div id="countdown">
+        <h1 id="weeks"></h1><h1> Week/s and </h1>
+        <h1 id="Days"></h1><h1> day/s and </h1>
+        <h1 id="Hrs"></h1> <h1>Hrs/s</h1><br>
+
+        
+    </div><br>
+   <p id="currTime"></p>
+
+    <form>
+        <div id="boxes">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+        </div>
+        <input type="button" value="Get Notified!" id="btn" onclick="display()">
+    </form>
+</body>
+
+<script>
+
+    function display()
+    {
+        var x = document.getElementById("name").value;
+        var y = document.getElementById("email").value;
+
+        var msg = "Thank you " + x + " for subscribing with " + y + ".";
+
+        alert(msg);
+    }
+
+
+    const countdown = ()=>{
+        const countDate = new Date("Dec 26, 2023 00:00:00").getTime();
+        const now = new Date().getTime();
+        const gap = countDate-now;
+
+        const sec = 1000;
+        const min = sec * 60;
+        const hr = min * 60;
+        const day = hr * 24;
+        const week = day * 7;
+
+        const textWeek = Math.floor(gap/week);     
+        const textDay = Math.floor((gap % week) / day); 
+        const textHrs = Math.floor((gap % day) / hr);
+
+        const thisTime1 = Math.floor((now % day) / hr);
+        const thisTime2 = Math.floor((now % hr) / min);
+        const thisTime3 = Math.floor((now % min) / sec);
+        
+        document.getElementById("weeks").innerHTML = textWeek;
+        document.getElementById("Days").innerHTML = textDay;
+        document.getElementById("Hrs").innerHTML = textHrs;
+
+        
+        document.getElementById("currTime").innerHTML = thisTime1+ ":"+thisTime2+ ":"+thisTime3;
+        
+        console.log(now);
+    };
+
+        setInterval(countdown, 1000);
+
+
+</script>
+</html>

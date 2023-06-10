@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Inn.css">
+    <title>Coming Soon</title>
+</head>
+<body>
+    <section id="leftt">
+        <h1>Coming Soon!</h1>
+        <h1 id="timee"></h1>
+        <p>We're working hard to finish the development of This site. Our Target launch date is <b>Feb 2025</b>! Sign up for updates using below!</p>
+
+    
+    <form>
+
+        <input type="email" placeholder="Enter email" >
+        <input type="button" value="Sign up" id="btn">
+    </form>
+    </section>
+    
+    <div id="separate"></div>
+
+
+    
+</body>
+<script>
+    function time()
+    {
+        var toDate = new Date("Feb 14 , 2025 00:00:00").getTime();
+        var now = new Date().getTime();
+
+        var diff = toDate - now;
+
+        const seconds = 1000;
+        const min = seconds * 60;
+        const hrs = min * 60;
+        const days = hrs * 24;
+        const week = days * 7;
+
+        var w = Math.floor(diff / week);
+        var d = Math.floor((diff % week) / days);
+        var h = Math.floor((diff % days) / hrs);
+        var m = Math.floor((diff %hrs) / min);
+        var s = Math.floor((diff % min) / seconds);
+        
+        console.log(s + m);
+        
+        document.getElementById("timee").innerHTML = w + " weeks " + d + " days " + h + " Hours " + m + " min " + s + " seconds ";
+
+    }
+
+    setInterval(time, 1000);
+</script>
+</html>

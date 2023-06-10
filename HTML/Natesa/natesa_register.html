@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="natesa_form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <script>
+        function register(){
+
+            var n = document.getElementById("fname").value;
+            var s = document.getElementById("fSurname").value;
+            var a = document.getElementById("faddy").value;
+            var c = document.getElementById("fCampus").value;
+            var m = document.getElementById("fmail").value;
+            var n = document.getElementById("fnumber").value;
+            var f = document.getElementById("fmember").value;
+            //var z = document.getElementById("fship").value;
+
+    
+            var msg = "First name: " + n + "<br> Last Name: " + s + "<br> Address: " + a + "<br> Email: " + m +"<br> Phone Number: " + n + "<br> Campus: " + c + "<br> Category: " + "<br> Natesa ID: " + f;
+
+            document.write(msg);
+
+}
+    </script>
+    -->
+    
+</head>
+<body>
+    
+    <h1>Natesa registration Form</h1>
+    <h3>Required item(*)</h3>
+    <hr>
+    <fieldset>
+        <form >
+            <label>Title</label>
+            <input type="text"><br>
+
+            <label for="">First Name*</label>
+            <input type="text" id="fname" required><br>
+
+            <label for="">Last Name*</label>
+            <input type="text" id="fSurname" required><br>
+
+            <label for="">Address*</label>
+            <textarea name="" id="faddy" cols="23" rows="10"></textarea><br>
+
+            <label for="">Campus</label>
+            <input type="text" id="fCampus"><br>
+
+            <label for="">E-mail*</label>
+            <input type="email" name="" id="fmail" required><br>
+
+            <label for="">Phone Number*</label>
+            <input type="text" id="fnumber" placeholder="(nnn) nnn-nnnn" required><br>
+
+            <label for="">Natesa Membership Number</label>
+            <input type="text" id="fmember" placeholder="natesa-nnnnnn"><br>
+
+           <label for="">Registration Category</label>
+            <select id="fShip">
+                <option  value="1">Natesa Member</option>
+                <option  value="2">Non Member</option>
+            </select>
+            <br><br><br>
+        <input id="btn" type="button" value="continue" required onclick="register()">
+
+     </form>
+    </fieldset>
+</body>
+<script src="registration.js"></script>
+</html>

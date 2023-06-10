@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strictly JavaScript</title>
+    <link rel="stylesheet" href="script.css">
+    <script >
+
+        function writeInfo()
+        {
+
+            var x = document.getElementById('name').value;
+            var y = document.getElementById('surname').value;
+            var a = document.getElementById('addy').value;
+            var bb = document.getElementById('age').value;
+            var g = document.getElementsByName('gender').value;
+
+          /*  for (var o=0; o<gender.length; o++){
+                if(gender[o].checked)
+                {
+                    g=gender[o].value;
+                }
+            }
+*/
+            for (var i=0; i<age.length; i++)
+                {
+                if (age[i].checked)
+                    {
+                    bb=age[i].value;
+                    }
+                }
+
+
+            var msg = "hi your name is " + x + " and your surname is " + y + " and you are "+ bb + " of age <br> Your address is : " + a;
+
+           document.write(msg);
+           //document.getElementById("info").innerHTML = msg;
+        }
+    
+        
+            var countDownDate = new Date("Aug 3, 2023 12:35:00").getTime();
+            var x = setInterval(function() {
+
+                const now = new Date().getTime();
+
+                var distance = countDownDate - now;
+
+                const seconds = 1000;
+                const min = seconds * 60;
+                const hrs = min * 60;
+                const days = hrs * 24;
+                const week = days * 7;
+
+                var day = Math.floor((distance % week) / days);
+                var hr = Math.floor((distance % days) / hrs);
+                var minn = Math.floor((distance % hrs) / min);
+                var sec = Math.floor((distance % min) / seconds);
+              
+                document.getElementById("info").innerHTML = day + "d " + hr + "h " + minn + "m " + sec + "s ";
+            
+                if (distance < 0) {
+                    clearInterval(x);
+                     document.getElementById("info").innerHTML = "EXPIRED";
+                 }
+//console.log(Date());
+            } );
+        
+
+    </script>
+
+
+</head>
+<header><h1>Trust me when i say im going to master JS</h1></header>
+<body>
+    <fieldset>
+        <legend>Mastering JS</legend>
+        <form>
+            <label>Name</label><br>
+            <input id="name"  type="text" placeholder="Name" required ><br><br>
+
+            <label >Surname</label><br>
+            <input id="surname"  type="text"placeholder="Surname"><br><br>
+
+            <label >Address </label>
+            <textarea name="" id="addy" cols="30" rows="10"></textarea>
+
+            <label>Gender</label><br>
+            <label >Male<input type="radio" name="gender"></label>
+            <label >FeMale<input type="radio" name="gender"></label><br><br>
+
+            <label>Age range</label><br>
+            <label>18-20 <input type="radio" name="age" id="age" value="18-20"></label><br>
+            <label>21-25 <input type="radio" name="age" id="age" value="21-25"></label><br>
+            <label>26-30 <input type="radio" name="age" id="age" value="26-30"></label><br>
+            <label>31-35 <input type="radio" name="age" id="age" value="31-35"></label><br><br>
+
+            
+ 
+    </select><br><br>
+
+            <input id="btn" type="submit" onclick="writeInfo()">
+           
+
+        </form>
+
+    </fieldset>
+
+   
+
+    <fieldset>
+        <legend>Displaying info</legend>
+        <br>
+         <h1 id="info"></h1>
+         <p id="msg"></p>
+        <br>
+    </fieldset>
+
+</body>
+</html>

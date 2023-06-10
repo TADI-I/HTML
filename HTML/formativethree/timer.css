@@ -1,0 +1,24 @@
+#clock{
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    min-height: 40vh;
+}
+
+h3{
+    padding: 10px;
+   
+}
+
+#week,#day,#hour,#min,#sec{
+    font-size: 2rem;
+
+}
+
+#container-week,#container-day,#container-hour,#container-min,#container-seconds{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.336);
+    
+}

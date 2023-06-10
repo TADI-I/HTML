@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<header>Welcome to the 24x7 Fitness Club: Courts Reservation Page!!
+    <p id="time"></p>This is the amount of time you have until the site shuts down.
+</header>
+<body>
+    <div id="forr">
+    <fieldset>
+        <legend> Member Demographic</legend>
+
+        <form id="form" onsubmit="return display()">
+            <label>Name </label>
+            <input type="text" id="name"><br><br>
+            
+            <label >Are you a Member?</label><br><br>
+            <div>
+                <label><input type="radio" id="member" name="member" value="1" >Member</label>
+                <label><input type="radio" id="member" name="member" value="2">Non-Member</label>
+            </div><br>
+
+            <label>Email</label>
+            <input type="email" id="email" retu><p id="everify"></p>
+
+            
+        
+    </fieldset>
+
+        <label >Facalty</label>
+        <select id="facility">
+            <option value="1">Badminton</option>
+            <option value="2">cow</option>
+        </select><br><br>
+
+        <label for="">Select a Reservation date and time:</label><br><br>
+        <input type="date" name="" id="datee"> <input type="time" name="" value ="" id=""><br><br>
+
+        <label for=""><input type="checkbox" name="" id="boxx" value="1" required>I agree to the club's reservation policy</label><br><br>
+
+        <input type="button" name="" id="" value="submit" onclick="display()"> <input type="reset" value="Reset" id="resetter"> <br><br>
+
+    </form>
+</div>
+    
+</body>
+<script>
+
+function reset(){
+
+    document.getElementById("form").reset();
+}
+    
+    function display(){
+
+        var x = document.getElementById("name").value;
+        var m = document.getElementById("member").value;
+        var e = document.getElementById("email").value;
+        var chek = document.getElementById("boxx").value;
+        var d = document.getElementById("datee").value;
+        var f = document.getElementById("facility").value;
+
+
+        //d = new Date().getDate();
+        //check box verification
+        if (chek >= 2 ){
+            window.alert("Please check the Box");
+            document.getElementById("form").reset();
+        }
+
+        //facility
+
+        if(f == 1){
+            f = "Badminton";
+        }
+        else if(f == 2)
+        {
+            f = "cow"
+        }
+
+
+        //member
+        if(m == 1){
+            m = "Member";
+        }
+        else if(m == 2)
+        {
+            m = "Non-Member";
+        }
+
+       //mail verificatio
+        const b = "tadii0304@gmail.com"
+        if (e != b) {
+            document.getElementById("everify").innerHTML="*Incorrect email!!";
+            //document.getElementById("email").reset();
+            return false;
+        }
+        else{
+        
+            var msg = document.write("Dear " + x + ",As a " + m + " of our Fitness Club with " + e + ". The "+ f +" has been booked for you for the [day] of [month], [year]. As you have adhered to our club’s reservation policies, it means you will obey our rules and all Thank you");
+        return true;
+        }
+
+        return true;
+    }
+
+    function countdown(){
+    var time = new Date("Dec 02, 2023 00:00:00").getTime();
+    var now = new Date().getTime();
+
+    var diff = time - now ;
+    
+    
+    const sec = 1000;
+    const min = sec * 60;
+    const hr = min * 60;
+    const day = hr * 24;
+    const week = day * 7;
+    
+
+    var weeks = Math.floor(diff/week);
+    var days = Math.floor((diff % week) / day);
+    var hrs = Math.floor((diff % day) / hr);
+    var mins = Math.floor((diff % hr) / min);
+    var secs = Math.floor((diff % min) / sec); 
+    console.log(timmer);
+    
+
+    var timmer = document.getElementById("time").innerHTML = weeks + " Weeks, " +days + " days, " + hrs + " hours, " + mins + " min, and " + secs + " seconds!";
+}
+setInterval(countdown,1000);
+
+
+</script>
+</html>

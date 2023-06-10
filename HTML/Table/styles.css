@@ -1,0 +1,45 @@
+table{
+    border: 10px solid  ;
+    background-color: aqua;
+    padding: auto;
+    width: 100%;
+    border-collapse: collapse;
+   
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+th{
+    border: 3px solid snow;
+    padding: 5px;
+    text-align: left   ;
+    
+}
+
+.shift{
+    text-align: center;
+    border: 5px solid snow;
+    background-color: greenyellow;
+    height: 20px;
+}
+.blank{
+    border: 0px solid red;
+    
+}
+
+.time{
+    width: 15%;
+}
+
+td{
+    background-color: aliceblue;
+    font-weight: 2000;
+}
+.cow{
+    text-align: center;
+    border: 5px solid snow;
+    background-color: blue;
+    height: 20px;
+    color: aliceblue;
+}
+

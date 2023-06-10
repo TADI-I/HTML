@@ -1,0 +1,29 @@
+header{
+      
+      text-align: center;
+}
+
+html{
+      background-color : brown;
+}
+
+fieldset{
+      margin-top: 50px;
+      width: 35%;
+      border-radius: 15px;
+      border-color: snow;
+      color: gold;
+      
+}
+
+label{
+      color: snow;
+}
+
+#name,#surname{
+      width: 70%;
+}
+
+#btn{
+      border-radius: 5px;
+}

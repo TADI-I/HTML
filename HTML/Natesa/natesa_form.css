@@ -1,0 +1,31 @@
+label{
+    display: inline-block;
+    width:200px;
+    padding: 5px;
+}
+input{
+    width: 200px;
+}
+hr{
+    background-color: green;
+    width: 80%;
+    height: 5px;
+    text-align: left;
+}
+
+h1{
+    color: green;
+}
+
+fieldset{
+    border: 0px;
+}
+body{
+    display: flexbox;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+#btn{
+    padding-left: 0px;
+}

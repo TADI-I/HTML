@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h5 id="cow" class="cow2">Heading</h5>
+    <h5 id="cow3" class="cow2">Dont click</h5>
+
+    <input type="submit" value="Register" class="btn" onclick="showMessage()">
+                <input type="button" value="Auto Fill form" class="btn" onclick="document.getElementById('time').innerHTML = Date()">
+                <p id="time"></p>
+    <h6 id="regg"></h6>
+    <style>
+        #heading1{
+            font-size: 100px;
+            color: pink;
+
+        }
+    </style>
+    
+</body>
+
+<script>
+    var headingOne = document.getElementsByTagName("h5");
+    headingOne[0].id = "heading1";
+    headingOne[0].innerHTML = "java is cool";
+    headingOne[1].style.color = "green";
+    headingOne[1].style.fontSize = "50px";
+
+    headingOne[0].addEventListener("mouseover" , function(){
+        headingOne[0].innerHTML = "mouse is on top";
+    })
+
+    headingOne[0].addEventListener("mouseout" , function(){
+        headingOne[0].innerHTML = "java is cool";
+    })
+    
+    headingOne[1].addEventListener("click" , function(){
+        alert("you clicked me, why??");
+
+    })
+    var reg = document.getElementsByTagName("input");
+    reg[0].addEventListener("click" , function(){
+        //reg[0].document.getElementById("regg").innerHTML = "you tried ton register";
+        alert("you really tried to register with out filling out anything?");
+    })
+    </script>
+
+</html>

@@ -1,0 +1,59 @@
+.leftt{
+    text-align: left;
+    float: left;
+    color: snow;
+}
+
+.rightt{
+    text-align: right;
+    float: right;
+    color: snow;
+}
+body{
+    background-image: url(3200184.webp);
+    width: auto;
+    height: auto;
+    image-orientation: flip;
+}
+
+#mainHead{
+    clear: both;
+    color: snow;
+    padding-top: 300px;
+    text-align: center;
+}
+
+#state{
+    text-align: center;
+    padding-top: 10px;
+    color: snow;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    height:40px;
+    width: 300px;
+    margin: 20px;
+}
+
+#btn{
+
+    background-color: teal;
+    text-align: center;
+    width: 200px;
+}
+
+#countdown{
+    display: flex;
+    justify-content: center;
+    color: snow;
+}
+
+#currTime{
+    color: snow;
+    text-align: center;
+    
+}

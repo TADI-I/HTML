@@ -1,0 +1,41 @@
+#con1, #con3, #con2{
+    
+    width: 30%;
+    float: left;
+    padding: 5px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#con1{
+    background-color: pink;
+}
+
+#con2{
+    background-color: aqua;
+    
+}
+
+#con3{
+    background-color: rgb(82, 216, 105);
+}
+
+#contain{
+    display: block;
+    background-color: cadetblue;
+    border: 1px red;
+}
+
+#backg{
+    
+    border: 20px white;
+}
+
+body{
+    background-image: url(eye.png);
+}

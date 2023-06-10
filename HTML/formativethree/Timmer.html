@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="timer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" value="Start Count Down" id="stary" onclick="clock()">
+
+    
+    <div id="clock">
+        <div id="container-week">
+            
+            <h3>Week</h3>
+            <h3 id="week"></h3>
+        </div>
+
+        <div id="container-day">
+            
+            <h3>Day</h3>
+            <h3 id="day"></h3>
+        </div>
+
+        <div id="container-hour">
+            
+            <h3>Hour</h3>
+            <h3 id="hour"></h3>
+        </div>
+
+        <div id="container-min">
+            
+            <h3>Min</h3>
+            <h3 id="min"></h3>
+        </div>
+
+        <div id="container-seconds">
+            
+            <h3>Second</h3>
+            <h3 id="sec"></h3>
+        </div>
+        
+      
+
+        <p id="hr"></p>
+    </div>
+
+    <h2 id="vid"></h2>
+</body>
+
+<script>
+    function clock(){
+        x = new Date("December 2, 2023 00:00:00").getTime();
+        y = new Date().getTime();
+
+        var diff = x - y;
+
+        const seconds = 1000 ;
+        const miniutes = seconds * 60 ;
+        const hours = miniutes * 60 ;
+        const days = hours * 24 ;
+        const weeks = days * 7 ;
+        const Months = weeks * 4;
+
+        var mon = Math.floor(diff / Months);
+        var week = Math.floor((diff % Months) / weeks );
+        var day = Math.floor((diff % weeks) / days);
+        var hour = Math.floor((diff % days ) / hours);
+        var min = Math.floor((diff % hours) / miniutes);
+        var sec = Math.floor((diff % miniutes) / seconds);
+       // document.getElementById("DisTime").innerHTML = Date();
+
+        //document.getElementById("Time").innerHTML = mon + " Months " + week + " Weeks " + day + " days "+ hour + " Hours "+ min + " Mins "+ sec + " Seconds ";
+        //console.log(week);
+
+        day = theZero(day);
+        hour = theZero(hour);
+        min = theZero(min);
+        sec = theZero(sec);
+
+        document.getElementById("week").innerHTML = week;
+        document.getElementById("day").innerHTML = day;
+        document.getElementById("hour").innerHTML = hour;
+        document.getElementById("min").innerHTML = min;
+        document.getElementById("sec").innerHTML = sec;
+
+
+        setInterval(clock, 1000);
+
+        function theZero(i)
+    { 
+        
+        if(i<10){
+            i = "0" + i;
+
+        }
+        return i;
+    }
+    }
+    
+
+  
+
+
+    function vidd(){
+
+        var video;
+
+        video='<dd> \
+        <video controls autoplay>\
+        <source src="choral.mp4" type="video/ogg">\
+        </video>\
+        </dd>';
+
+        document.getElementById("vid").innerHTML = video;
+    }
+
+    vidd();
+</script>
+</html>

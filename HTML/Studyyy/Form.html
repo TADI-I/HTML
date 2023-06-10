@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>From</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+
+<body>
+
+
+
+   <fieldset class="survey2">
+    
+        <legend >REG FORM</legend>
+        <div class="form">
+            <div class="input_field">
+                <label>First Name</label>
+                <input type="text" class="input" id="fname">
+            </div>
+            <div class="input_field">
+                <label>Surname</label>
+                <input type="text" class="input" id="fsurname">
+            </div>
+            <div class="input_field">
+                <label>Email</label>
+                <input type="email" class="input" placeholder="cowarence21@gmail.com" id="fmail">
+            </div>
+            <div class="input_field">
+                <label>Confirm email Name</label>
+                <input type="email" class="input">
+            </div>
+            <div class="input_field">
+                <label>Password</label>
+                <input type="password" class="input" id="fpassword">
+            </div>
+            <div class="input_field">
+                <label>Confirm Password</label>
+                <input type="password" class="input" id="fpasswordConf">
+            </div>
+            <div class="Custom_Select">
+                <select>
+                    <option value="" selected>Select</option>
+                    <option value="">Man</option>
+                    <option value="">Woman</option>
+                </select>
+            </div>
+            <div class="input_field">
+                <label>Cell Number</label>
+                <input type="text" class="input" id="fcell">
+            </div>
+            <div class="input_field">
+                <label>Address</label><br>
+                <textarea class="textarea" rows="4" cols="40" id="faddy"> </textarea>
+            </div>
+            <div class="input_field terms">
+                <label class="check">
+                    <p>agree to the Terms and conditions</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                     
+                </label>
+               
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Register" class="btn" onclick="showMessage()">
+                <input type="button" value="Auto Fill form" class="btn" onclick="document.getElementById('time').innerHTML = Date()">
+                <p id="time"></p>
+            </div>
+            <hr>
+            <h3 id="msg2"></h3>
+            <div>
+                <label>Have you successfuly Registered??</label>
+                <select>
+                    <option value="yes">Yes</option>
+                    <option value="No" selected>NO</option>
+                    <option value="Maybe">Maybe</option>
+                    <option value="Mosdef">MosDef</option>
+                </select>
+            </div>
+        </div>
+    
+</fieldset>
+
+</body>
+<script src="formm.js">
+
+ 
+
+</script>
+</html>

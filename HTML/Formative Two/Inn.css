@@ -1,0 +1,36 @@
+body{
+    background-image: url(eye.png);
+    
+    background-repeat: no-repeat;
+    width: auto;
+}
+
+#leftt{
+    padding: 0px;
+    margin-top: 00px;
+    background-color: rgba(1, 245, 245, 0.486);
+    float: left;
+    align-items: center;
+    width: 62%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: content;
+    justify-content: center;
+    order-top: 40vh solid rgba(0, 0, 0, 0.479);;
+    order-left: 1vh solid teal;
+    
+}
+
+
+#btn{
+
+    margin-left: -15px;
+}
+
+#sparate{
+    height: 0;
+    width: 0;
+    border-bottom: 62% solid rgba(0, 128, 128, 0.479);
+    border-left: 30% solid rgba(0, 128, 128, 0.479);
+}

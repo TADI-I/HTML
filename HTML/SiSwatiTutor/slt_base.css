@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*
+   Base Style Sheet for the SiSwati Language Tutoring Website
+
+   Filename: slt_base.css
+*/
+
+/* style rule for displaying footer, header, and nav as a block
+
+
+
+*/
+
+body, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, nav, ol, p, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+body {
+   line-height: 1;
+}

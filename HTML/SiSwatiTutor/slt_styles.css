@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*
+
+   Typographical styles for SiSwati Language Tutoring
+
+   Filename: slt_styles.css
+
+*/
+
+/* Window and Body Styles */
+
+
+
+
+
+/* Horizontal Navigation List Styles */
+
+
+
+nav.horizontal a:link, nav.horizontal a:visited {
+   color: rgb(250, 238, 218);
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   color: rgb(255, 255, 64);
+}
+
+
+/* Topics Styles */
+   ul#topics {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+ul#topics li p {
+   color: rgb(95, 114, 232);
+   font-size: 0.8em;
+}
+
+
+/* Customer Comment Styles */
+ul#comments li p {
+   font-size: 0.9em;
+   color: rgb(121, 121, 121);
+   line-height: 1.2em;
+}
+
+/* Footer Styles */

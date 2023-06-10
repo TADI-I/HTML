@@ -1,0 +1,19 @@
+*{text-align: center;
+
+}
+
+input[type=text],input[type=password]{
+   margin: 5px 0 22px 0;
+   width: 70%;
+   padding: 15px;
+   display: inline-block;
+background-color: lightgrey;
+}
+
+#button{background-color: green;}
+
+fieldset{width: 100%;}
+
+legend{font-size: 110%;}
+
+.checked:checked{color: blue;}

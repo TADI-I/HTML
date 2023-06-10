@@ -1,0 +1,22 @@
+fieldset{
+    text-align: center;
+}
+
+#forr{
+    border: 3px dashed red;
+    background-color: azure;
+    
+}
+
+header{
+    text-align: center;
+    background-color: maroon;
+    
+    color: snow;
+    margin-bottom: 5px;
+    
+}
+
+body{
+    text-align: center;
+}
