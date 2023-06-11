@@ -1,0 +1,97 @@
+html{
+    background-color: rgb(25, 25, 114);
+    margin-left: 10%;
+    margin-right: 10%;
+    color: snow;
+}
+
+header{
+    display: block;
+    background-color: rgb(0, 0, 87) ;
+}
+
+#even{
+    background-color: rgb(0, 0, 87);
+    
+}
+
+#odd{
+    background-color: rgb(25, 25, 114);
+    
+
+}
+
+#infoo{
+    width: 60%;
+    background-color: snow;
+    color: black;
+}
+
+#input{
+    width: 40%;
+}
+
+#serv{
+    background-color: rgb(0, 0, 87) ;
+    padding-left: 7%;
+}
+
+#image{
+    width: 70%;
+}
+
+#contact{
+    background-color: snow;
+    color: black;
+    
+    padding-left: 10%;
+}
+
+
+form{
+    float: right;
+    background-color: snow;
+    
+    color: black;
+    padding: 10px 50px;
+}
+input{
+    width: 300px;
+    height: 35px;
+}
+
+hr{
+    clear: both;
+}
+#links{
+    float: right;
+}
+
+#radiology{
+    float: left;
+}
+
+a{
+    color: white;
+    
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+#homeT{
+    text-align: center;
+}
