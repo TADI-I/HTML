@@ -7,6 +7,8 @@ html{
 
 header{
     display: block;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: rgb(0, 0, 87) ;
 }
 
@@ -21,18 +23,38 @@ header{
 
 }
 
+#opptimes{
+    padding:10px ;
+}
+
 #infoo{
-    width: 60%;
+    
     background-color: snow;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+#inf{
+    width: 100%;
+
+
+}
+
+#imghead{
+    width: 85%;
 }
 
 #input{
     width: 40%;
+    min-height: 90vh;
 }
 
 #serv{
-    background-color: rgb(0, 0, 87) ;
+    background-color: rgb(0, 0, 87);
+    width: 100%;
     padding-left: 7%;
 }
 
@@ -51,10 +73,13 @@ header{
 form{
     float: right;
     background-color: snow;
-    
+    max-height: 90vh;
+    min-height: 90vh;
     color: black;
     padding: 10px 50px;
+    width: 75%;
 }
+
 input{
     width: 300px;
     height: 35px;
@@ -63,6 +88,7 @@ input{
 hr{
     clear: both;
 }
+
 #links{
     float: right;
 }
@@ -94,4 +120,5 @@ a:link {
 
 #homeT{
     text-align: center;
+    width: 100%;
 }
