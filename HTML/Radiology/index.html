@@ -11,6 +11,27 @@
     {
         alert("2 Olympus Road, The Hill, 2197");
     }
+
+    function infoSub()
+    {
+        x = document.getElementById("name").value;
+        a = document.getElementById("Addy").value;
+        e = document.getElementById("Email").value;
+        n = document.getElementById("Number").value;
+        s = document.getElementById("Subject").value;
+        m = document.getElementById("Message").value; 
+
+        if(x == "" || a =="" || e =="" || n =="" || s =="" || m =="")
+        {
+            alert("Please enter all the required infomation");
+            return false;
+        }
+        else{
+        info = "Name :<br>" + x + "<br>Address :<br>" + a + "<br>Email :<br>" + e + "<br>Phone Number :<br>" + n + "<br>Subject :<br>" + s + "<br>Message :<br>" + m ;
+        document.write(info);
+        return true;
+        }
+    }
 </script>
 
 <body>
@@ -63,15 +84,15 @@
                
             </td>
             <td id="input">
-  <form >
+  <form onsubmit="return infoSub()">
     <h3>Enter Contact infomation</h3>
-    <label for="">Name <br><input type="text" required placeholder="Enter Your Name"></label><br><br>
-    <label for="">Address <br><input type="text" required placeholder="Enter Your Address"></label><br><br>
-    <label for="">Email <br><input type="email" required placeholder="Enter Your Email"></label><br><br>
-    <label for="">Phone <br><input type="number" required placeholder="Enter Your Number (62 962 2755)"></label><br><br>
-    <label for="">Subject <br><input type="text" required placeholder="Type the Subject"></label><br><br>
-    <label for="">Message <br><textarea placeholder="Type your message here"></textarea></label><br><br>
-    <input type="button" value="Submit">
+    <label for="">Name <br><input id="name" type="text" required placeholder="Enter Your Name"></label><br><br>
+    <label for="">Address <br><input id="Addy" type="text" required placeholder="Enter Your Address"></label><br><br>
+    <label for="">Email <br><input id="Email" type="email" required placeholder="Enter Your Email"></label><br><br>
+    <label for="">Phone <br><input id="Number" type="number" required placeholder="Enter Your Number (62 962 2755)"></label><br><br>
+    <label for="">Subject <br><input id="Subject" type="text" required placeholder="Type the Subject"></label><br><br>
+    <label for="">Message <br><textarea id="Message" placeholder="Type your message here" cols="36" rows="3"></textarea></label><br><br>
+    <input type="button" value="Submit" onclick="infoSub()">
    </form>
 
 
@@ -126,9 +147,9 @@
 
 <tr>
     <table id="serv">
-    Radiology <br><br>
-    tadi@gmail.com <br><br><br>
-    2023 by Radiology. Created by T∆D|| 062 962 2755
+    <tr><td>Radiology <br><br></td></tr>
+    <tr><td>tadi@gmail.com</td></tr> <br><br><br>
+    <tr><td>2023 by Radiology. Created by T∆D|| 062 962 2755</td></tr> 
 </table>
 </tr>
 </table>
