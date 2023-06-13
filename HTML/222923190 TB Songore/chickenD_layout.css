@@ -1,0 +1,79 @@
+/*  html layout*/
+body{
+  background-color: magenta;
+}
+#hhhh{
+  clear:both;
+  text-align: center;
+
+
+}
+
+/* header layout*/
+header{
+  clear: both;
+  width: 100%;
+  display:block;
+  display: flex;
+}
+
+
+/*h1 in the header layout*/
+h1{
+  font-size: 20px;
+
+  text-align: left;
+}
+
+#text{
+  width: 85%;
+  float:right;
+}
+
+
+/*image inside the paragraph layout*/
+#paraImg{
+  float: right;
+
+}
+
+
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/*Nav layout*/
+nav{
+  width: 15%;
+  float:left;
+margin-left: 0 %;
+
+
+}
+li{
+  list-style: none;
+  ma
+}
+
+
+
+section{
+  clear: right;
+  display: block;
+  float: right;
+  width: 80%
+}
+/*Footer layout*/
+footer{
+  clear: both;
+  text-align: center;
+}
+
+
+/*footer paragraph layout*/

@@ -1,0 +1,13 @@
+
+header, nav, article, footer
+{
+  display: block;
+}
+header, nav, article, footer, h1, p, ul, li, img
+{
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}

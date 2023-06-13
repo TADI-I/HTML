@@ -1,0 +1,53 @@
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+/*body layout*/
+body{
+	background-color: pink;
+}
+a{
+text-align: : center;
+}
+h1{
+	  text-align: center;
+
+}
+
+p{
+
+font-family: Champagne, cursive;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  text-rendering: optimizeSpeed;
+	list-style: none;
+}
+/* figure element layout*/
+figure{
+	display: block;
+	text-align: center;
+	width: 387px;
+	margin-right: 50%;
+	margin-left: 40%;
+
+
+}
+
+
+/* figcaption element layout*/
+figcaption{
+
+	display: block;
+	background-color: white;
+	width: 387px;
+}
+
+
+/* img inside figure element layout*/
+img{
+	border-bottom: 5px solid white;
+	margin-bottom: 0;
+
+}
