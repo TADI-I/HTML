@@ -1,0 +1,39 @@
+#card_content {
+  margin-top: -25px;
+}
+
+@media (min-width: 1200px) {
+  #card_content {
+    margin-top: 0px;
+    margin-left: -25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #content_container {
+    margin: 30px;
+  }
+}
+
+div {
+}
+
+#outer {
+  max-width: 1400px;
+}
+
+#img-container {
+  max-width: 75vw;
+  z-index: 1;
+}
+
+#card_content {
+  background-color: #447e5b;
+  color: white;
+  width: 70vw;
+}
+
+#img_id {
+  max-height: 45vw;
+}
+
